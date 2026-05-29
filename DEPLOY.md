@@ -1,10 +1,9 @@
-# Deploy to GitHub Pages for `oxc.me`
+# Deploy to GitHub Pages
 
 This project is prepared as a static GitHub Pages site.
 
 ## Files already prepared
 
-- `CNAME` is set to `oxc.me`
 - `.nojekyll` is present so GitHub Pages serves files directly
 
 ## 1. Create a GitHub repository
@@ -40,44 +39,17 @@ In the GitHub repository:
    - `Folder`: `/ (root)`
 4. Save
 
-## 4. Set the custom domain
+## 4. Wait for publish
 
-In the same `Pages` settings:
+Usually a few minutes after push.
 
-1. Enter `oxc.me` in `Custom domain`
-2. Save
-3. Enable `Enforce HTTPS` after DNS becomes valid
+Final URL:
 
-## 5. Configure DNS for `oxc.me`
+- `https://YOUR_GITHUB_NAME.github.io/REPOSITORY_NAME/`
 
-At your domain provider, point the apex domain `oxc.me` to GitHub Pages with these `A` records:
+For this repository, the live URL is:
 
-- `185.199.108.153`
-- `185.199.109.153`
-- `185.199.110.153`
-- `185.199.111.153`
-
-Optional but recommended:
-
-- Add `CNAME` for `www` -> `YOUR_GITHUB_NAME.github.io`
-
-## 6. Verify the domain in GitHub
-
-Recommended by GitHub for security:
-
-1. Open GitHub `Settings`
-2. Open `Pages`
-3. Open domain verification
-4. Verify `oxc.me`
-
-## 7. Wait for publish
-
-Usually a few minutes after push + DNS propagation.
-
-Final URLs:
-
-- `https://oxc.me`
-- optionally `https://www.oxc.me`
+- `https://ou136888.github.io/oxc-me/`
 
 ## Notes
 
