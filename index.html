@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ouxuecheng | NBA Stars Archive</title>
+    <link rel="preconnect" href="https://commons.wikimedia.org" />
+    <link rel="preconnect" href="https://upload.wikimedia.org" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="site-header">
+      <a class="brand" href="#top">ouxuecheng</a>
+      <nav aria-label="Primary navigation">
+        <a href="#issue-01">Archive</a>
+        <a href="#web">Court Web</a>
+        <a href="#issue-03">Legends</a>
+        <a href="#sources">Sources</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="kicker">2026 Digital Basketball Almanac</p>
+          <h1>ouxuecheng</h1>
+          <p class="hero-lede">
+            I am ouxuecheng. This is how I introduce the NBA: lights down,
+            hardwood glowing, legends walking into one midnight arena of
+            daggers, dynasties, rivalries, and roar.
+          </p>
+          <p class="hero-zh">我是 ouxuecheng。这里是我眼中的 NBA：灯光压低，地板发亮，传奇们走进同一座午夜球馆，带来绝杀、王朝、宿敌和山呼海啸般的欢呼。</p>
+        </div>
+        <div class="scoreboard" aria-label="NBA atmosphere scoreboard">
+          <span>MJ 6 RINGS</span>
+          <span>KOBE 81</span>
+          <span>LEBRON 40K+</span>
+          <span>CURRY 3PT KING</span>
+        </div>
+      </section>
+
+      <section class="issue intro" id="issue-01">
+        <div class="issue-label">Issue No. 01</div>
+        <div class="split">
+          <div>
+            <h2>NBA star index, rebuilt as a living court.</h2>
+          </div>
+          <div class="copy-stack">
+            <p>
+              When I talk about basketball, I do not start with a spreadsheet.
+              I start with the sound: sneakers screaming, the crowd rising, and
+              a star catching the ball while the whole building holds its breath.
+            </p>
+            <p class="zh">
+              当我介绍篮球时，我不会先从数据表开始。我会先讲声音：球鞋摩擦地板，全场观众站起，球星接到球的那一刻，整座球馆都屏住呼吸。
+            </p>
+            <p>
+              In my NBA, Jordan floats, Curry stretches the floor past belief,
+              LeBron turns transition into a storm, and Wembanyama makes the
+              future look taller than the rim.
+            </p>
+            <p class="zh">
+              在我的 NBA 里，乔丹在空中停留，库里把射程拉到想象之外，詹姆斯把转换进攻变成风暴，文班亚马让未来看起来比篮筐还高。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="name-strip" aria-label="Name breakdown">
+        <span>O</span>
+        <span>U</span>
+        <span>X</span>
+        <span>U</span>
+        <span>E</span>
+        <span>C</span>
+        <span>H</span>
+        <span>E</span>
+        <span>N</span>
+        <span>G</span>
+      </section>
+
+      <section class="issue court-web-section" id="web">
+        <div class="issue-label">Issue No. 02</div>
+        <div class="section-heading">
+          <h2>Spider web of NBA icons</h2>
+          <p>
+            I connect these names the way I remember the games: rings pulling
+            like gravity, MVP seasons burning like comets, and great scorers
+            leaving trails bright enough to split the whole court.
+          </p>
+          <p class="zh">我把这些名字按照记忆中的比赛连在一起：冠军像引力一样牵动历史，MVP 赛季像彗星划过夜空，顶级得分手留下的轨迹足以劈开整片球场。</p>
+        </div>
+        <div class="web-shell">
+          <canvas id="court-web" width="1200" height="780" aria-hidden="true"></canvas>
+          <div id="node-layer" class="node-layer" aria-label="NBA player web"></div>
+        </div>
+      </section>
+
+      <section class="issue cards-section" id="issue-03">
+        <div class="issue-label">Issue No. 03</div>
+        <div class="section-heading">
+          <h2>Selected player dossiers</h2>
+          <p>
+            These are the players I would point to first: footwork against
+            range, power against patience, old banners staring down the next
+            impossible highlight.
+          </p>
+          <p class="zh">如果我要向别人介绍 NBA，我会先指向这些人：脚步对上射程，力量对上耐心，旧王朝的旗帜注视着下一次不可思议的高光。</p>
+        </div>
+        <div id="player-grid" class="player-grid"></div>
+      </section>
+
+      <section class="issue issue-contact">
+        <div class="issue-label">Final Buzzer</div>
+        <div class="contact-panel">
+          <p class="kicker">Presented by</p>
+          <h2>ouxuecheng</h2>
+          <p>
+            I built this as my courtside introduction to the league: legends,
+            modern stars, all-time arguments, and a midnight walk through the
+            Hall of Fame tunnel.
+          </p>
+          <p class="zh">这是我以场边视角写下的 NBA 介绍：传奇、当代球星、历史级争论，以及一段穿过名人堂通道的午夜漫步。</p>
+        </div>
+      </section>
+
+      <section class="sources" id="sources">
+        <h2>Image and fact sources</h2>
+        <p>
+          Player imagery is linked from Wikimedia Commons / Wikipedia file
+          pages. Career honor summaries are based on broadly cited NBA and
+          Basketball Hall of Fame records. Images may resolve to the best public
+          file available for each player.
+        </p>
+      </section>
+    </main>
+
+    <div class="modal" id="player-modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-backdrop" data-close></div>
+      <article class="modal-card" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" data-close aria-label="Close player details">×</button>
+        <div class="modal-top">
+          <div>
+            <p class="kicker" id="modal-era"></p>
+            <h2 id="modal-title"></h2>
+            <p id="modal-summary"></p>
+          </div>
+          <div class="modal-meta" id="modal-meta"></div>
+        </div>
+        <div class="gallery" id="modal-gallery"></div>
+        <div class="video-block">
+          <div class="video-heading">
+            <h3>Local highlight mixtape</h3>
+            <span>Offline MP4</span>
+          </div>
+          <div class="video-frame" id="modal-video"></div>
+        </div>
+        <div>
+          <h3>Career honors</h3>
+          <ul id="modal-honors"></ul>
+        </div>
+      </article>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
